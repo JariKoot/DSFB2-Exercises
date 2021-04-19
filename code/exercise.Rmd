@@ -1,0 +1,58 @@
+---
+title: "exercise"
+author: "Jari Koot"
+date: "4/12/2021"
+output: html_document
+---
+library(readxl)   
+__Exercise 1.2__
+
+```{r setup}
+library(tidyverse)  #voor(%>%)
+library(desc)       #Get information about the authors
+library(bookdown)   #For creating a website
+library(readxl)     #For reading excel files
+library(toolboxr)   #For rotating the axes in R
+library(nlme)       #For running multi-level statistical models
+library(ggsignif)   
+```
+
+```{r 1.2A, echo=FALSE}
+download.file(url="http://genesdev.cshlp.org/content/suppl/2009/06/11/gad.1806309.DC1/FancySuppTable2.xls", destfile = "fancysupptable2_11.xls")
+fancysupptable2 <- read_xls("fancysupptable2_11.xls")
+```
+
+
+
+__Exercise 2.2__
+
+_How would you prepare for this analysis in R/Rstudio?_
+
+load the required packages and download and look at the xlsx file from the DSFB2 website
+
+
+_Look at the contents of the file, which Excel Worksheet do you need for the analysis?_
+
+You will need the datasheet: All Cycles
+
+
+_Which steps do you need to take to load the data into R_
+
+Delete all the plots that are in the excel data, place the data in row 1 and column 1. Place the data that is above all the sheets to a seperate sheet called metadata.
+
+
+_Which steps do you need to take in reshaping the file to make the dataformat match the requirement for using `{ggplot}_
+
+Make the data tidy
+
+
+_Think of a better file name_
+
+salmonella_cycle_density.xlsx
+
+
+_Write a conceptual and kind and friendly, but clear reply email (in English) to the researcher, where you address the changes that the researcher needs to make to the file in order for you to be able to analyze this data in R._
+
+Dear scientist,
+I was going through your datasheets in exel and noticed that there were a few thing wrong with the data. Firstly, you gotta delete all the plots in the excel data, because I am going to make these in R studio. Secondly you have to put the data of every sheet in row 1 and column 1. This makes it easyer for me to anylise the data. Place the metadata of each sheet in a seperate sheet (avoid repetitions). I aks you kindly to correct the data and send it to me again. So that i can analyze this data in R.
+
