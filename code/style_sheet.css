@@ -1,5 +1,46 @@
-.bordershere {
+
+_______________________________________________________________________
+/* Applies to all <h1>...</h1> elements. */
+h1 {
+  font-size: 35px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+/*<h1>Dit is een stukje tekst</h1>*/
+_______________________________________________________________________
+
+_______________________________________________________________________
+/* Applies to all elements with <... class="someclass"> specified. */
+.someclass { color: red; }
+
+/*<div class="someclass">*/
+/*Dit hoort rood te zijn */
+/*</div>*/
+_______________________________________________________________________
+/* Applies to the element with <... id="someid"> specified. */
+#someid { color: blue; }
+
+/*<div id="someid">*/
+/*Dit hoort blauw te zijn*/
+/*</div>*/
+
+_______________________________________________________________________
+.blueborder {
 border-style: solid;
 border-width: 5px;
-border-color: purple;
+border-color: blue;
+}
+
+/*<div class="blueborder">*/
+/*text*/
+/*</div>*/
+_______________________________________________________________________
+/* Applies to the entire body of the HTML document (except where overridden by more specific
+selectors). */
+body {
+  margin: 25px;
+  background-color: rgb(240,240,240);
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  color: green;
 }

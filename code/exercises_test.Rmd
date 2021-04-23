@@ -3,12 +3,24 @@ title: "test exercises"
 author: "Jari Koot"
 date: "4/22/2021"
 output:
-  html_document:
-    css: "style_sheet.css"
+  html_document
+
 
 ---
+You can do simple footnotes within RMarkdown[^smallnote]. Even multiline-footnotes.[^bignote]
+
+[^smallnote]: footnote text
+
+[^bignote]: Here's one with multiple paragraphs and code.
+    text
+    code too 1, 2, 3, 4, 5
 
 
-<div class="bordershere">
-text
-</div
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+/* Style sheet for exercise5_2.rmd*/
+body {
+  margin: 25px;
+  background-color: rgb(240,240,240);
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  color: darkgreen;
+}
+
+/*headers*/
+.headers { color: gray; 
+  font-size: 22px;
+}
+
+
+/*border*/
+.rainbow {
+border-style: solid;
+border-width: 4px;
+border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+  height: 120px;
+  margin: 20px auto;
+  width: 1000px;
+}
+
+/*hover*/
+a:hover {
+  color: hotpink;
+}

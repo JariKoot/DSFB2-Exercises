@@ -1,0 +1,22 @@
+---
+title: "Mendeley"
+author: "Jari Koot"
+date: "4/23/2021"
+output: html_document
+bibliography: bib.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+She said something really smart [-@Hodgson2021].
+
+Some people agree with her [@dehaan08; @vangestel18].
+
+As do colleagues[see @teunis99, pp. 33-35; also @svanoef04, ch. 1].
+
+or inline:
+
+@smith04 [p. 33] says blah.

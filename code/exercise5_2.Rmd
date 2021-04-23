@@ -2,7 +2,10 @@
 title: "Exercise 5.2"
 author: "Jari Koot"
 date: "4/22/2021"
-output: html_document
+output: 
+  html_document:
+    css: "style_5_2.css"
+  
 ---
 
 ```{r setup, include=FALSE}
@@ -12,9 +15,9 @@ library(ggplot2)
 ```
 
 
-
+<div class="headers">
 __pictures of my top 5 dinosaurs:__
-
+</div>
 
 ![Dinosaur number 1; 'Triceratops'](https://static.wikia.nocookie.net/jurassicworld-evolution/images/0/02/JWETriceratops.png/revision/latest/scale-to-width-down/310?cb=20200120203949){width=45%}
 
@@ -30,9 +33,9 @@ __pictures of my top 5 dinosaurs:__
 
 ![Dinosaur number 5; 'Velociraptor'](https://www.dinosaurus.nl/wp-content/uploads/2017/09/Velociraptor.1.jpg){width=45%}
 
-
-__A table with some information about the dinosaur:__
-
+<div class="headers">
+__A table with some information about the dinosaurs:__
+</div>
 
 
 
@@ -42,13 +45,14 @@ dinosaur <- c("Triceratops", "Ankylosaurus", "Spinosaurus", "Tyrannosaurus rex",
 description <- c("A herbivore dinosaur with two long horns for protection", "An armoured herbivore dinosaur", "A giant theropod, the largest of all predatory dinosaurs", "A large theropod, that relied on his smell and sight for hunting", "A small, bird-like theropod. With large claws to kill his preys")
 dataframe <- data.frame(dinosaur = dinosaur, description = description)
 dataframe %>% kbl() %>% kable_classic_2(full_width = F) %>% 
-  column_spec(1, color = c("red", "green", "brown", "orange", "blue")) %>%
-  kable_styling(position = "left")
+  kable_styling(position = "left") %>%
+  column_spec(1, color = c("red", "green", "brown", "orange", "blue")) 
+  
 
 ```
-
+<div class="headers">
 __Rating the dinosaurs in a graph:__
-
+</div>
 ```{r graph, echo=FALSE}
 rating <- c(8.5, 6.5, 10, 9, 8)
 dataframe_rating <- dataframe %>% mutate(rating = rating)
@@ -62,3 +66,19 @@ dataframe_rating %>% ggplot(aes(dinosaur, rating, fill = dinosaur)) +
   theme(text = element_text(size = 15)) +
   theme(legend.position = "none")
 ```
+
+
+<div class="headers">
+__When did dinosaurs become extinct:__
+</div>
+<div class="rainbow">
+Dinosaurs went extinct about 65 million years ago (at the end of the Cretaceous Period), after living on Earth for about 165 million years. If all of Earth time from the very beginning of the dinosaurs to today were compressed into 365 days (one calendar year), the dinosaurs appeared January 1 and became extinct the third week of September. (Using this same time scale, the Earth would have formed approximately 18.5 years earlier.) Using the same scale, people (Homo sapiens) have been on earth only since December 31 (New Year's eve). The dinosaurs' long period of dominance certainly makes them unqualified successes in the history of life on Earth.
+</div>
+
+
+<div class="headers">
+__Link to the wikipedia page:__
+</div>
+<div class="hover">
+[Click here to go to the dinosaur wikipedia](https://nl.wikipedia.org/wiki/Dinosaur)
+</div>
