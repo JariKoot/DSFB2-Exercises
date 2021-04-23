@@ -1,0 +1,14 @@
+---
+title: "test exercises"
+author: "Jari Koot"
+date: "4/22/2021"
+output:
+  html_document:
+    css: "style_sheet.css"
+
+---
+
+
+<div class="bordershere">
+text
+</div

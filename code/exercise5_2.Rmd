@@ -1,0 +1,64 @@
+---
+title: "Exercise 5.2"
+author: "Jari Koot"
+date: "4/22/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)  #voor(%>%)
+library(kableExtra)
+library(ggplot2)
+```
+
+
+
+__pictures of my top 5 dinosaurs:__
+
+
+![Dinosaur number 1; 'Triceratops'](https://static.wikia.nocookie.net/jurassicworld-evolution/images/0/02/JWETriceratops.png/revision/latest/scale-to-width-down/310?cb=20200120203949){width=45%}
+
+
+![Dinosaur number 2; 'Ankylosaurus'](http://www.scified.com/media/jurassicworldankylosaurusconceptart-226472462123624.jpg){width=45%}
+
+
+![Dinosaur number 3; 'Spinosaurus'](https://images0.persgroep.net/rcs/FsbuMe9etmL2yUv0cPy34Poinec/diocontent/170034615/_fitwidth/694/?appId=21791a8992982cd8da851550a453bd7f&quality=0.8&desiredformat=webp){width=45%}
+
+
+![Dinosaur number 4; 'Tyrannosaurus rex'](https://assets.newatlas.com/dims4/default/20ba125/2147483647/strip/true/crop/2700x1800+250+0/resize/1200x800!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2F0f%2F92%2Fd1e2c7ca4b12960745a801fbf5fb%2Fdepositphotos-232443590-xl-2015.jpg){width=45%}
+
+
+![Dinosaur number 5; 'Velociraptor'](https://www.dinosaurus.nl/wp-content/uploads/2017/09/Velociraptor.1.jpg){width=45%}
+
+
+__A table with some information about the dinosaur:__
+
+
+
+
+
+```{r table, echo = FALSE} 
+dinosaur <- c("Triceratops", "Ankylosaurus", "Spinosaurus", "Tyrannosaurus rex", "Velociraptor")
+description <- c("A herbivore dinosaur with two long horns for protection", "An armoured herbivore dinosaur", "A giant theropod, the largest of all predatory dinosaurs", "A large theropod, that relied on his smell and sight for hunting", "A small, bird-like theropod. With large claws to kill his preys")
+dataframe <- data.frame(dinosaur = dinosaur, description = description)
+dataframe %>% kbl() %>% kable_classic_2(full_width = F) %>% 
+  column_spec(1, color = c("red", "green", "brown", "orange", "blue")) %>%
+  kable_styling(position = "left")
+
+```
+
+__Rating the dinosaurs in a graph:__
+
+```{r graph, echo=FALSE}
+rating <- c(8.5, 6.5, 10, 9, 8)
+dataframe_rating <- dataframe %>% mutate(rating = rating)
+
+dataframe_rating %>% ggplot(aes(dinosaur, rating, fill = dinosaur)) +
+  geom_col() +
+  labs(title = "Rating my top 5 dinosaurs on a scale from 1 to 10", 
+       y = " ",
+       x = " ") +
+  theme_classic() +
+  theme(text = element_text(size = 15)) +
+  theme(legend.position = "none")
+```

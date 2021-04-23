@@ -18,8 +18,9 @@ library(ggsignif)
 ```
 
 ```{r 1.2A, echo=FALSE}
-download.file(url="http://genesdev.cshlp.org/content/suppl/2009/06/11/gad.1806309.DC1/FancySuppTable2.xls", destfile = "fancysupptable2_11.xls")
-fancysupptable2 <- read_xls("fancysupptable2_11.xls")
+#download.file(url="http://genesdev.cshlp.org/content/suppl/2009/06/11/gad.1806309.DC1/FancySuppTable2.xls", destfile = "fancysupptable2_11.xls")
+#fancysupptable2 <- read_xls("fancysupptable2_11.xls")
+
 ```
 
 
@@ -56,3 +57,22 @@ _Write a conceptual and kind and friendly, but clear reply email (in English) to
 Dear scientist,
 I was going through your datasheets in exel and noticed that there were a few thing wrong with the data. Firstly, you gotta delete all the plots in the excel data, because I am going to make these in R studio. Secondly you have to put the data of every sheet in row 1 and column 1. This makes it easyer for me to anylise the data. Place the metadata of each sheet in a seperate sheet (avoid repetitions). I aks you kindly to correct the data and send it to me again. So that i can analyze this data in R.
 
+
+__Exercise 5.1__
+
+```{r graph}
+library(RColorBrewer)
+graph <- ggplot(iris, aes(Sepal.Length, Petal.Width)) + 
+  geom_point(aes(color = Species)) +
+  theme_minimal()
+
+# Scatter plot
+graph + scale_color_brewer(palette = "YlOrRd")
+
+```
+
+| hey 	| hallo 	| hoi 	|   	|   	|
+|-----	|-------	|-----	|---	|---	|
+| jo  	| fakka 	| man 	|   	|   	|
+|     	|       	|     	|   	|   	|
+|     	|       	|     	|   	|   	|
