@@ -1,0 +1,81 @@
+---
+title: "lorem"
+author: 
+  - Jari Koot
+  - Jelle Versluis
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    number_sections: FALSE
+    theme: cerulean
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Lorem ipsum {.tabset}
+_From Wikipedia, the free encyclopedia_
+
+In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design.
+
+## Background
+Lorem ipsum is typically a corrupted version of 'De finibus bonorum et malorum', a 1st century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.
+
+Versions of the Lorem ipsum text have been used in typesetting at least since the 1960s, when it was popularized by advertisements for Letraset transfer sheets.
+
+## Lorem ipsum 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget augue nec massa egestas eleifend nec eget nibh. Phasellus iaculis sit amet odio in luctus. Etiam suscipit mollis faucibus. Praesent at magna vel nunc elementum bibendum sagittis quis sapien. Etiam semper non libero at sollicitudin. Donec tempor leo enim, vitae varius magna aliquam et. Maecenas vel magna orci. Mauris eu ligula non ligula sollicitudin cursus eu vitae quam. Suspendisse ligula mauris, mollis vel condimentum at, fermentum id ligula. Cras facilisis gravida nisi quis rutrum. Praesent in viverra arcu. Sed vel tempor leo. Donec pretium, neque at aliquet laoreet, tellus massa congue urna, quis congue turpis dolor ac magna. Vestibulum condimentum in purus ut lacinia. In ultricies a enim vitae laoreet.
+
+### Sed efficitur
+Sed efficitur congue nunc a lacinia. Nulla rutrum suscipit euismod. Morbi at leo quis justo varius euismod sed eget neque. Maecenas facilisis commodo vulputate. Integer commodo purus arcu, in finibus felis pellentesque et. Phasellus tempus imperdiet consectetur. Vivamus imperdiet tortor nec massa auctor, sollicitudin cursus orci blandit.
+
+```{r}
+library(ggplot2)
+ggplot(diamonds) + geom_point(aes(x=carat, y=price, color=cut)) + geom_smooth(aes(x=carat, y=price, color=cut)) 
+```
+
+
+### Aenean lacus diam
+Aenean lacus diam, laoreet sit amet lobortis non, posuere a nisi. Vivamus sed ante eu erat posuere rutrum. Nullam purus arcu, fermentum tristique nibh id, facilisis commodo leo. Mauris laoreet iaculis sapien, a scelerisque libero interdum at. Nam augue tortor, tempus lacinia luctus vitae, scelerisque sit amet dolor. Nam felis ex, semper id sollicitudin non, aliquam eu leo. In hac habitasse platea dictumst. Mauris sed massa augue. Morbi nec velit eu lectus iaculis porta.
+
+## Orci varius knor
+Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut dolor ex, condimentum a eros vel, fermentum congue purus. Sed posuere, mi eget aliquam commodo, erat lorem commodo mauris, imperdiet egestas nunc quam in urna. Nullam vitae quam condimentum, dapibus purus non, sagittis sapien. Cras vel finibus risus. In hac habitasse platea dictumst. Proin quis efficitur nisi. Nunc blandit nec arcu nec mollis. Nam mattis quis odio eget finibus. Vivamus at nisi augue.
+
+### Phasellus
+Phasellus porta accumsan nulla non ultrices. Pellentesque vulputate pellentesque nulla vitae auctor. Nulla molestie felis ac posuere mattis. Suspendisse posuere sem iaculis, dictum ipsum in, hendrerit odio. Ut erat libero, mollis a eros ac, aliquam dignissim arcu. Vivamus et accumsan leo. Cras non enim et odio mattis vulputate quis non augue. Pellentesque porta tincidunt erat a tincidunt. Vestibulum maximus sed diam sit amet malesuada. Nullam mollis tellus et risus hendrerit pretium at sed ante.
+
+#### Mauris
+Mauris nunc sem, sodales id leo sed, venenatis maximus augue. Pellentesque volutpat orci et pharetra pretium. Vivamus massa metus, pharetra in augue eget, hendrerit dapibus nisl. Nam id sapien elementum, venenatis nibh eu, tincidunt quam. Curabitur magna lectus, tempor nec eros quis, facilisis tempor velit. Curabitur tortor leo, finibus non tempus sit amet, efficitur non quam. Aenean nec sapien pretium, venenatis orci facilisis, finibus neque.
+
+#### more Mauris
+Mauris et ipsum diam. Aliquam finibus aliquet pretium. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ultricies pretium tortor non interdum. Fusce eu libero tortor. Curabitur fringilla facilisis congue. Etiam venenatis erat velit, a tincidunt lacus tincidunt a. Maecenas eros magna, pharetra eu vestibulum maximus, pretium ut nulla.
+
+Nunc scelerisque dictum augue ac cursus. Nunc laoreet efficitur libero in ultrices. Vestibulum risus dolor, condimentum non quam sed, commodo elementum metus. Fusce lacus diam, scelerisque ut egestas quis, porttitor sed lacus. Praesent sit amet malesuada urna. Pellentesque vel nibh diam. Nulla facilisi. Curabitur ut nunc est. Nam a ultricies enim, semper fringilla enim. Nam ut lorem sit amet diam interdum vulputate sed in lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+## Nam finibus
+Nam finibus convallis interdum. Donec facilisis hendrerit risus, in tincidunt ipsum interdum sit amet. Nam aliquam, turpis ac bibendum porttitor, arcu nibh convallis orci, sit amet aliquet augue est at est. Quisque et dapibus metus. Donec fringilla felis ante, sit amet egestas turpis feugiat ut. Proin facilisis, sapien vitae lobortis tempus, risus purus vestibulum dolor, eu sollicitudin mi eros vel nisl. Sed posuere arcu eget dui ullamcorper aliquam. Donec rutrum lorem et purus lobortis, ut dapibus sapien euismod.
+
+Nam ultrices maximus ullamcorper. Vestibulum scelerisque nisl ut enim molestie porta. Morbi malesuada enim magna, ut maximus erat porttitor at. Duis aliquet sed mauris sed scelerisque. Vivamus tincidunt egestas velit, quis faucibus ex vestibulum non. Fusce eros urna, luctus at finibus ac, tempus sit amet dolor. Ut ultricies est eu dui mollis feugiat. Praesent sagittis sed nisi non pharetra. Phasellus eget dictum lorem, eu gravida ligula. Proin sed ligula quis risus commodo scelerisque vitae accumsan arcu. Ut at dui eu massa gravida blandit. In elit dui, euismod quis aliquet convallis, tempus eget ex. Proin id libero eget ligula interdum condimentum non sed dui. Aliquam fermentum at metus in ultricies. Pellentesque tincidunt, ligula ac ultrices iaculis, quam massa congue libero, ut elementum augue est eu neque.
+
+## Morbi cursus 
+Morbi cursus est vel vulputate hendrerit. Vivamus lacinia felis eget congue pharetra. Sed varius elit vel purus maximus, in egestas sapien tincidunt. Praesent vestibulum pretium volutpat. Quisque accumsan diam nunc, et facilisis velit tempus eget. Ut id arcu nec eros commodo dictum. Donec gravida turpis est, nec feugiat erat pharetra in. Sed quam eros, tempus non ullamcorper eu, facilisis vitae augue. Fusce et ultricies ante. Morbi sed urna quis elit venenatis lacinia. Curabitur condimentum quam id vestibulum mollis. Nulla congue dolor vitae nunc viverra, sed rutrum metus rhoncus. Morbi quis augue enim. Nulla vestibulum mauris eget enim finibus, in consequat erat sollicitudin.
+
+```{r}
+sp <- ggplot(faithful, aes(x=eruptions, y=waiting)) 
+sp + geom_point() + geom_density_2d()
+```
+
+
+Sed vitae risus consectetur, egestas nisi ut, congue urna. Donec lacinia convallis dictum. Etiam eleifend metus pharetra ipsum viverra, vitae rhoncus enim dignissim. Donec aliquam elit a ante sagittis cursus. Mauris imperdiet vestibulum accumsan. Cras pharetra lorem dapibus efficitur aliquam. Donec at aliquet tellus. Pellentesque condimentum lacus eget odio fermentum placerat. Ut eu laoreet eros. Ut venenatis, ex vitae imperdiet dictum, odio nisl bibendum orci, et cursus arcu orci non massa. Vestibulum pretium enim odio. Aenean ut libero quis lectus pellentesque rutrum sit amet in libero. Donec non felis vulputate massa interdum tincidunt nec in eros. Duis cursus luctus metus, vitae sodales leo cursus sed.
+
+## Donec sit amet
+Donec sit amet pretium mauris. Nam tempor faucibus neque, eu dictum justo posuere eget. Pellentesque vitae felis in turpis commodo rhoncus. Donec eleifend, urna quis commodo elementum, libero ipsum pretium leo, nec mollis mi urna nec purus. Quisque lobortis pretium cursus. In lobortis nisi vel justo ultricies, sit amet efficitur lorem efficitur. Curabitur quis quam nec elit dignissim sollicitudin sit amet nec erat. Mauris a lobortis purus.
+
+Sed justo odio, imperdiet sit amet libero eu, suscipit porta tellus. Etiam commodo ex a pharetra efficitur. Ut laoreet ultricies nunc, id efficitur augue feugiat et. Duis ullamcorper imperdiet felis non fermentum. Morbi aliquam semper libero, eget cursus nibh vehicula vitae. Fusce et erat sollicitudin, porttitor leo lobortis, congue mauris. Cras auctor tempus mi, non blandit turpis commodo maximus. Nunc nec tincidunt est. Mauris leo est, sodales sed mi vel, ullamcorper cursus diam. Maecenas et pretium lorem. Fusce non euismod mi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam aliquet dignissim rhoncus.
+
+### Nulla elementum orci - no knor
+Nulla elementum orci ipsum, nec sagittis libero vulputate sed. Nunc sodales hendrerit dictum. Donec sed risus lorem. Nunc sit amet dignissim lacus, sed efficitur massa. Nulla sed placerat sapien. Sed mattis metus nec diam tincidunt, sed accumsan odio vehicula. In volutpat urna mauris, a auctor mi finibus a. In vestibulum elit ante, quis suscipit odio dapibus ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacus enim, commodo sit amet volutpat vitae, semper id neque. Nam lacinia, velit eu eleifend sagittis, arcu dui lobortis felis, ut fringilla velit velit vel ante. In sem risus, vulputate egestas leo vel, finibus volutpat risus. Vestibulum lobortis faucibus nisl, in condimentum magna gravida sed. Nam sodales volutpat purus sit amet aliquam. Suspendisse at bibendum odio. Mauris consequat tincidunt lectus vitae pellentesque.
+
+Generated 15 paragraphs, 1288 words, 8610 bytes of Lorem Ipsum by https://www.lipsum.com/

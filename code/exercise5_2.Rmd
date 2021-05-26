@@ -2,10 +2,10 @@
 title: "Exercise 5.2"
 author: "Jari Koot"
 date: "4/22/2021"
-output: 
+output:
   html_document:
-    css: "style_5_2.css"
-  
+    css: style_5_2.css
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -46,7 +46,7 @@ description <- c("A herbivore dinosaur with two long horns for protection", "An 
 dataframe <- data.frame(dinosaur = dinosaur, description = description)
 dataframe %>% kbl() %>% kable_classic_2(full_width = F) %>% 
   kable_styling(position = "left") %>%
-  column_spec(1, color = c("red", "green", "brown", "orange", "blue")) 
+  column_spec(1, color = c("red", "gold", "green", "blue", "pink")) 
   
 
 ```

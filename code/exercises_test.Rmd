@@ -3,20 +3,34 @@ title: "test exercises"
 author: "Jari Koot"
 date: "4/22/2021"
 output:
-  html_document
+  html_document:
+    toc: true
+    toc_float: true
 
 
 ---
-You can do simple footnotes within RMarkdown[^smallnote]. Even multiline-footnotes.[^bignote]
+## Quarterly Results {.tabset}
 
-[^smallnote]: footnote text
+### By Product
 
-[^bignote]: Here's one with multiple paragraphs and code.
-    text
-    code too 1, 2, 3, 4, 5
+(tab content)
+
+### By Region
+
+(tab content)
 
 
 
+```{r}
+
+library(htmlwidgets)
+library(leaflet)
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lat=52.084036170323024, lng=5.173630727235891, popup="Here be HL7!") 
+# get coordinates from google maps
+```
+m  # Print the map
 
 
 
