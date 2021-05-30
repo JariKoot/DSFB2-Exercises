@@ -1,0 +1,69 @@
+---
+title: "CV Jari Koot"
+author: "Jari Koot"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(pagedown)
+library(readxl)    #for reading excel files
+library(drc)       #for creating a dosis-response curve
+library(ggplot2)   #for making graphs
+library(tidyverse)
+library(dplyr)
+library(skimr)
+library(here)
+library(ggplot2)
+library(RPostgres)
+library(remotes)
+library(RPostgreSQL)
+library(DBI)
+```
+
+AAside
+================================================================================
+
+![JariKoot](jarikoot.jpg){width = 60%}
+
+Main
+================================================================================
+
+***
+>Personal information
+
+
+*Address:*         Benedenheulseweg 10, Stolwijk
+
+*Zip code:*        2821LR
+
+*Phone number:*    +316 28900247
+
+*Email address:*   jarikoot@gmail.com
+
+*Date of birth:*   27 december 2000
+
+*Driver license:*  License B
+
+***
+
+>Education
+
+When  | What
+------------- | -------------
+August 2015 - June 2018  | **HAVO** - Schoonhoven
+August 2018 - present  | **Life Sciences** - Hogeschool Utrecht, *Minor: Data science for biology*
+
+
+***
+
+>Working experience
+
+When  | What
+------------- | -------------
+December 2019 - present  | **Freelancer** - Different places in Holland
+August 2015 - December 2019  | **Shop assistant** - Stolwijk
+Juli 2014 - October  |  **Horticulturist** - Stolwijk
+
+***
+
